@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "~bulma";
+
+#app {
+  font-family: "Open Sans", Quicksand, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+// Brand colors
+$brand: #16828F;
+$green: #D9E15F;
+$grey: #525252;
+$pink: #A11A79;
+
+// Bulma's global variables
+$family-sans-serif: "Open Sans", sans-serif;
+$grey-dark: $grey;
+$grey-light: $grey;
+$primary: $brand;
+$link: $brand;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Bulma's component variables
+$body-background-color: #FFFF;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Headings
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 24pt;
+  line-height: 30pt;
+  color: $brand;
+  text-align: left;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 16pt;
+  line-height: 22pt;
+  color: $grey;
+  text-align: left;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16pt;
+  line-height: 22pt;
+  color: $brand;
+  text-align: left;
+}
+
+a {
+  font-weight: 400;
+  font-size: 16pt;
+  line-height: 22pt;
+  color: $brand;
+  text-align: right;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 16pt;
+  line-height: 22pt;
+  color: $pink;
+  text-align: left;
+
+  &-label {
+    font-weight: 400;
+    font-size: 12pt;
+  }
+}
