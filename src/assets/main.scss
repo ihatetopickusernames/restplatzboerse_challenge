@@ -5,9 +5,10 @@
   font-family: "Open Sans", Quicksand, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  background-color: #fafafa;
 }
 
 // Brand colors
@@ -16,22 +17,13 @@ $green: #d9e15f;
 $grey: #525252;
 $pink: #a11a79;
 
-// Bulma's global variables
+// Global variables
 $family-sans-serif: "Open Sans", sans-serif;
-$grey-dark: $grey;
-$grey-light: $grey;
 $primary: $brand;
 $link: $brand;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
+$radius-rounded: 15pt;
 
-// Bulma's component variables
-$body-background-color: #ffff;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
-
-// Headings
+// Headings & Text
 h1 {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
@@ -63,6 +55,9 @@ a {
   line-height: 22pt;
   color: $brand;
   text-align: right;
+  &:hover {
+    color: $brand;
+  }
 }
 
 .weight {
@@ -78,22 +73,66 @@ a {
   }
 }
 
-.grid {
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+// Layout & Alignments
+.grid-display {
   display: grid;
-  grid-gap: 12px;
-  grid-template-columns: repeat(4, 400px);
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: scroll;
+  padding-left: 2pt;
+}
+
+.container {
+  //for mobile view switch to 375pt width
+  //max-width: 375pt !important;
+  max-width: 700pt !important;
+  min-height: 812pt !important;
+  border: #dedede 1px solid;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 136px 19px 0 19px;
+}
+
+// Card customization
+.card {
+  margin-top: 25px;
+  margin-right: 12.5px;
+  width: 287pt;
+  margin-bottom: 25px;
+  border-radius: 15pt !important;
+  box-shadow: -2pt 2pt 0 $green !important;
+
+  &-image {
+    max-height: 177pt !important;
+  }
 }
 
 img {
-  margin-left: auto;
-  margin-right: 5vw;
-  background-color: #fff;
-  width: 400px;
-  text-align: center;
-  height: auto;
-  border-radius: 8px;
+  border-top-left-radius: 15pt !important;
+  border-top-right-radius: 15pt !important;
 }
 
-body {
-  //background: whitesmoke;
+.card-content {
+  padding: 12px 12px 13px 12px !important;
+}
+
+.slider-content::after {
+  content: ""; // ::before and ::after both require content
+  position: absolute;
+  top: 167pt;
+  right: 0;
+  width: 27pt;
+  height: 27%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 1%,
+    rgba(255, 255, 255, 1) 50%
+  );
 }
