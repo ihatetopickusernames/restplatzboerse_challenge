@@ -1,18 +1,19 @@
 <template>
-  <h1>Restplatzboerse Challenge</h1>
-  <h2>Subtitel</h2>
-  <h3>Tier</h3>
-  <div class="price"><span class="price-label">ab</span> € 245</div>
+  <!--  <h1>Restplatzboerse Challenge</h1>-->
+  <!--  <h2>Subtitel</h2>-->
+  <!--  <h3>Tier</h3>-->
+  <!--  <div class="price"><span class="price-label">ab</span> € 245</div>-->
+  <TeaserSlider> </TeaserSlider>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
+import TeaserSlider from "./components/TeaserSlider.vue";
 require("@/assets/main.scss");
 
 @Options({
   components: {
-    HelloWorld,
+    TeaserSlider,
   },
 })
 export default class App extends Vue {}
