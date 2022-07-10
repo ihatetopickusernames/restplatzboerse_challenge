@@ -1,4 +1,5 @@
-# restplatzboerse_challenge
+# Restplatzbörse Coding Challenge
+![alt text](app.gif "preview")
 
 Rebuilt teaser slider according to given design and function description using Vue.js 3.
 
@@ -24,7 +25,7 @@ npm run build
 
 ```
 npm run lint
-prettier --write .
+![alt text](Isolated.png "Title")
 .\node_modules\.bin\eslint src\** --fix
 ```
 

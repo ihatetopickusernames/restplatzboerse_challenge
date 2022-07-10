@@ -79,3 +79,14 @@ a {
   white-space: nowrap;
   min-width: 0;
 }
+
+.container {
+  //for mobile view switch to 375pt width
+  //max-width: 375pt !important;
+  //max-width: 700pt !important;
+  min-height: 690pt !important;
+  border: #dedede 1px solid;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 136px 19px 0 19px;
+}
