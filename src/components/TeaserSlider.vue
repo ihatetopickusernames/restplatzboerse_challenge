@@ -1,8 +1,16 @@
+<script setup>
+// eslint-disable-next-line
+defineProps({
+  teaserTitle: String,
+  subtitle: String,
+});
+</script>
+
 <template>
   <div class="is-flex is-justify-content-space-between">
     <div>
-      <h1>Zootiere</h1>
-      <h2 class="ellipsis">Zufällige Auswahl an Zootieren</h2>
+      <h1>{{ teaserTitle }}</h1>
+      <h2 class="ellipsis">{{ subtitle }}</h2>
     </div>
     <a
       href="https://www.restplatzboerse.at/"

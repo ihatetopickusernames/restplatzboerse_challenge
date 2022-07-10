@@ -1,6 +1,9 @@
 <template>
   <main class="container mt-1 mb-1">
-    <TeaserSlider> </TeaserSlider>
+    <TeaserSlider
+      teaserTitle="Zootiere"
+      subtitle="Zufällige Auswahl an Zootieren"
+    />
   </main>
 </template>
 
