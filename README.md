@@ -25,7 +25,7 @@ npm run build
 
 ```
 npm run lint
-![alt text](Isolated.png "Title")
+prettier --write .
 .\node_modules\.bin\eslint src\** --fix
 ```
 
