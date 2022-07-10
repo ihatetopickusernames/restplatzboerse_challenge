@@ -58,4 +58,6 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss">
+@import "./TeaserSlider.scss";
+</style>
